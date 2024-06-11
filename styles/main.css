@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.center {
+  text-align: center;
+}
+.mid{
+  margin-top: 10%;
+}
+
+section {
+  text-align: left; /* Alineación de texto izquierda para evitar que el texto se centre */
+  width: 50%; /* Porcentaje deseado */
+  margin: 0 25%; /* Margen izquierdo y derecho del 25% */
+}
+section ul {
+  list-style: none; /* Eliminar los puntos de las listas */
+  padding: 0; /* Eliminar el padding predeterminado de las listas */
+}
+
+section ul li {
+  margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+section ul li strong {
+  font-weight: bold; /* Hacer que los elementos <strong> sean negrita */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Alejandro Claure</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scrpits/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="center">
+            <h2>Contáctame</h2>
+            <p>Puedes ponerte en contacto conmigo a través del siguiente formulario:</p>
+            <form id="contact-form">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <p id="status-message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alejandro Claure</p>
+    </footer>
+</body>
+</html>
