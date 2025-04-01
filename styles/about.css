@@ -1,1 +1,67 @@
+/* Mobile-first base styles */
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 15px;
+}
 
+/* About cards */
+.about-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.about-card h3 i {
+    margin-right: 8px;
+    color: #28a745;
+}
+
+.about-card ul {
+    padding: 0;
+    list-style: none;
+}
+
+.about-card ul li {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.about-card ul li strong {
+    color: #1a1a1a;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout for larger screens */
+        gap: 20px;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-card ul li {
+        font-size: 1rem;
+    }
+}

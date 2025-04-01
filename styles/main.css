@@ -1,39 +1,52 @@
+/* Global styles for all pages */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f7fa;
   color: #333;
 }
 
+/* Header styling */
 header {
-  background-color: #333;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
   color: #fff;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 10px 0 0;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-main {
-  padding: 1rem;
+nav ul li a:hover {
+  color: #28a745;
 }
 
+/* Footer styling */
 footer {
-  background-color: #333;
+  background-color: #1a1a1a;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -41,41 +54,85 @@ footer {
   width: 100%;
   bottom: 0;
 }
-.center {
-  text-align: center;
-}
-.mid{
-  margin-top: 10%;
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
-section {
-  text-align: left; /* Alineación de texto izquierda para evitar que el texto se centre */
-  width: 50%; /* Porcentaje deseado */
-  margin: 0 25%; /* Margen izquierdo y derecho del 25% */
+/* General section styles */
+.center {
+  max-width: 800px; /* Consistent with projects page */
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+.center h2 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.center h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #28a745;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center p {
+  color: #666;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.mid {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+/* General section styles for lists */
+section {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
 section ul {
-  list-style: none; /* Eliminar los puntos de las listas */
-  padding: 0; /* Eliminar el padding predeterminado de las listas */
+  list-style: none;
+  padding: 0;
 }
 
 section ul li {
-  margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+  margin-bottom: 10px;
 }
 
 section ul li strong {
-  font-weight: bold; /* Hacer que los elementos <strong> sean negrita */
+  font-weight: bold;
 }
 
+/* General button styles */
 .button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 12px 25px;
+  background-color: #28a745; /* Match the project button color */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #218838; /* Match the project button hover color */
+  transform: scale(1.05);
 }
